@@ -32,16 +32,16 @@ export default function Navbar(props) {
                 
                 <div className={`my-nav-links text-reset ${!isMenuOpen ? "" : "menuClose"}`}>
                     <a href="#Aboutme" className={`my-nav-links-item scale-hover px-2 ${active === 'About Me' ? 'myActive' : 'text-color'}`}
-                        onClick={() => { handleClick('About Me'); closeMenu(); }}>About Me</a>
+                        onClick={() => { handleClick('About Me'); closeMenu(); }}>{props.about}</a>
 
                     <a href="#Skills" className={`my-nav-links-item scale-hover px-2 ${active === 'Skills' ? 'myActive' : 'text-color'}`}
-                        onClick={() => { handleClick('Skills'); closeMenu(); }}>Skills</a>
+                        onClick={() => { handleClick('Skills'); closeMenu(); }}>{props.skills}</a>
 
                     <a href="#Projects" className={`my-nav-links-item scale-hover px-2 ${active === 'Projects' ? 'myActive' : 'text-color'}`}
-                        onClick={() => { handleClick('Projects'); closeMenu(); }}>Projects</a>
+                        onClick={() => { handleClick('Projects'); closeMenu(); }}>{props.projects}</a>
                     
                     <a href="#Contact" className={`my-nav-links-item scale-hover px-2 ${active === 'Contact Me' ? 'myActive' : 'text-color'}`}
-                        onClick={() => { handleClick('Contact Me'); closeMenu(); }}>Contact Me</a>
+                        onClick={() => { handleClick('Contact Me'); closeMenu(); }}>{props.contact}</a>
                 </div>
             </div>
         </nav >

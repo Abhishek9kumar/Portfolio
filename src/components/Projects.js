@@ -1,6 +1,16 @@
 import React from 'react'
 
+const projects = [
+    {
+        title:"TextUtils",
+        image:"/portfolio/Img/textUtils.png",
+        description:"This web application is a text utility which can be used to manipulate the text.",
+        link:"https://github.com/Abhishek9kumar/textUtils/tree/master",
+    }
+]
+
 export default function Portfolio() {
+
     return (
         <section className="text-center pb-5" id="Projects">
             <div className="mb-4">
@@ -12,15 +22,17 @@ export default function Portfolio() {
             {/* Image Grid */}
             <div className="container">
                 <div className="row g-3">
-                    <div className="col-6 col-sm-6 col-md-4">
-                        <a href="https://github.com/Abhishek9kumar/textUtils/tree/master" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-reset">
-                            <img src="/Img/textUtils.png" alt="textUtils" className="img-fluid" style={{height: "auto", objectFit: "fit", borderRadius: "5px" }} />
-                            <h3 className="text-start pt-2">TextUtils</h3>
+                    {projects.map((project, index) => (
+                        <div className="col-6 col-sm-6 col-md-4" key={index}>
+                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-decoration-none text-reset">
+                            <img src={project.image} alt="textUtils" className="img-fluid" style={{height: "auto", objectFit: "fit", borderRadius: "5px" }} />
+                            <h3 className="text-start pt-2">{project.title}</h3>
                             <p className="text-start small">
-                                This web application is a text utility which can be used to manipulate the text.
+                                {project.description}
                             </p>
                         </a>
                     </div>
+                    ))}
                 </div>
             </div>
             <div className="mt-5">
