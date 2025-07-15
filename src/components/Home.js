@@ -25,7 +25,8 @@ export default function Home(props) {
         development="Development"
         developmentDesc="I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job."
         maintenance="Maintenance"
-        maintenanceDesc="I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job." />
+        maintenanceDesc="I can help keep your website updated, secure, and running smoothly. Whether it’s fixing bugs, updating content, or improving performance, I’ll ensure your site stays reliable and user-friendly over time." 
+      />
       <Skills />
       <Projects />
       <Contact />

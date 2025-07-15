@@ -30,7 +30,7 @@ export default function About(props) {
                 <div className="row justify-content-center">
 
                     {/* Development */}
-                    <div className="col-md-4">
+                    <div className="col-md-4 mx-auto">
                         <h5 className="fw-bold text-uppercase">{props.development}</h5>
                         <p className="text-muted small">
                             {props.developmentDesc}
