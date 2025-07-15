@@ -3,7 +3,7 @@ import React from 'react'
 const projects = [
     {
         title:"TextUtils",
-        image:"/Img/textUtils.png",
+        image:"/portfolio/Img/textUtils.png",
         description:"This web application is a text utility which can be used to manipulate the text.",
         link:"https://github.com/Abhishek9kumar/textUtils/tree/master",
     }
