@@ -13,9 +13,9 @@ function App() {
   return (
     <div className="page-bg">
       <Router>
-        <Navbar about="About Me" skills="Skills" projects="Projects" contact="Contact"/>
+        <Navbar home="Home" skills="Skills" projects="Projects" contact="Contact"/>
         <Routes>
-          <Route exact path="/portfolio" element={<Home />}>
+          <Route exact path="/" element={<Home />}>
           </Route>
         </Routes>
       </Router>

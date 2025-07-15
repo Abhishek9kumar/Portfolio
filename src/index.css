@@ -61,7 +61,7 @@ code {
     padding: 0rem 4rem 0 0;
 }
 
-.my-nav-links a {
+.my-nav-links a,Link{
     text-decoration: none;
     font-size: 1.25rem;
 }

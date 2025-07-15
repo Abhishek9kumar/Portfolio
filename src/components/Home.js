@@ -1,7 +1,7 @@
 import React from 'react';
 import Info from './Info';
 import Profilelink from './Profilelink';
-import Aboutme from './Aboutme';
+import Aboutme from './About';
 import Skills from './Skills';
 import Objective from './Objective';
 import Projects from './Projects';
@@ -19,7 +19,7 @@ export default function Home(props) {
       </Info>
       <Objective Objective="Enthusiastic and highly motivated Computer Science graduate with a solid understanding of full stack web development using technologies like HTML, CSS, JavaScript, React, Node.js, and MongoDB. Eager to apply my knowledge and passion for coding to real-world projects in a collaborative and growth-oriented environment. Seeking an opportunity to kickstart my career as a Full Stack Developer and contribute to building user-friendly and scalable web applications." />
       <Aboutme
-        about="A B O U T &nbsp; M E"
+        about="A B O U T"
         description="I am a full stack web developer. I can design the site based on your needs and suggestions."
         explore="EXPLORE"
         development="Development"
