@@ -11,7 +11,8 @@ import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-
 
 export default function Home(props) {
   return (
-    <div>
+    <>
+      <div id="top"/>
       <Info greeting="Hi, I am" name="Abhishek Kumar" degination1="Front-end Developer / " degination2="Web Developer" imgLink={`${process.env.PUBLIC_URL}/Img/Abhishek.png`}>
         <Profilelink link="https://www.instagram.com/alexander_abhishek_?igsh=dXRtcjBuc25tcGh3" icon={faInstagram} />
         <Profilelink link="https://github.com/Abhishek9kumar" icon={faGithub} />
@@ -25,12 +26,12 @@ export default function Home(props) {
         development="Development"
         developmentDesc="I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job."
         maintenance="Maintenance"
-        maintenanceDesc="I can help keep your website updated, secure, and running smoothly. Whether it’s fixing bugs, updating content, or improving performance, I’ll ensure your site stays reliable and user-friendly over time." 
+        maintenanceDesc="I can help keep your website updated, secure, and running smoothly. Whether it’s fixing bugs, updating content, or improving performance, I’ll ensure your site stays reliable and user-friendly over time."
       />
       <Skills />
       <Projects />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 }

@@ -1,8 +1,8 @@
 import React, { useState} from "react";
-import { faBars} from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from "@fortawesome/free-solid-svg-icons/faTimes";
-import { Link } from "react-router-dom";
+import {Link as ScrollLink} from 'react-scroll';
 
 export default function Navbar(props) {
     // hamburger
@@ -17,7 +17,7 @@ export default function Navbar(props) {
     };
 
     // active state change
-    const [active, setActive] = useState('Home');
+    const [active, setActive] = useState('About');
 
     const handleClick = (item) => {
         setActive(item);
@@ -32,20 +32,18 @@ export default function Navbar(props) {
                 </div>
                 
                 <div className={`my-nav-links text-reset ${!isMenuOpen ? "" : "menuClose"}`}>
-                    <Link to="/" className={`my-nav-links-item scale-hover px-2 ${active === 'Home' ? 'myActive' : 'text-color'}`}
-                        onClick={() => { handleClick('Home'); closeMenu(); }}>{props.home}</Link>
 
-                    <a href="#About" className={`my-nav-links-item scale-hover px-2 ${active === 'About' ? 'myActive' : 'text-color'}`}
-                        onClick={() => { handleClick('About'); closeMenu(); }}>{props.about}</a>
+                    <ScrollLink to="About" className={`my-nav-links-item scale-hover px-2 ${active === 'About' ? 'myActive' : 'text-color'}`}
+                        onClick={() => { handleClick('About'); closeMenu(); }}>{props.about}</ScrollLink>
 
-                    <a href="#Skills" className={`my-nav-links-item scale-hover px-2 ${active === 'Skills' ? 'myActive' : 'text-color'}`}
-                        onClick={() => { handleClick('Skills'); closeMenu(); }}>{props.skills}</a>
+                    <ScrollLink to="Skills" className={`my-nav-links-item scale-hover px-2 ${active === 'Skills' ? 'myActive' : 'text-color'}`}
+                        onClick={() => { handleClick('Skills'); closeMenu(); }}>{props.skills}</ScrollLink>
 
-                    <a href="#Projects" className={`my-nav-links-item scale-hover px-2 ${active === 'Projects' ? 'myActive' : 'text-color'}`}
-                        onClick={() => { handleClick('Projects'); closeMenu(); }}>{props.projects}</a>
+                    <ScrollLink to="Projects" className={`my-nav-links-item scale-hover px-2 ${active === 'Projects' ? 'myActive' : 'text-color'}`}
+                        onClick={() => { handleClick('Projects'); closeMenu(); }}>{props.projects}</ScrollLink>
                     
-                    <a href="#Contact" className={`my-nav-links-item scale-hover px-2 ${active === 'Contact Me' ? 'myActive' : 'text-color'}`}
-                        onClick={() => { handleClick('Contact Me'); closeMenu(); }}>{props.contact}</a>
+                    <ScrollLink to="Contact" className={`my-nav-links-item scale-hover px-2 ${active === 'Contact Me' ? 'myActive' : 'text-color'}`}
+                        onClick={() => { handleClick('Contact Me'); closeMenu(); }}>{props.contact}</ScrollLink>
                 </div>
             </div>
         </nav >

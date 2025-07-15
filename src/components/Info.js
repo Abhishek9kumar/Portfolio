@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Info(props) {
   return (
-    <div id="top" className="hero-wrapper">
+    <div className="hero-wrapper">
       {/* Main Section */}
       < div className="hero-content" >
         {/*left content*/}

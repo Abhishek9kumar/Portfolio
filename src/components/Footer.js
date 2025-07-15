@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faAnglesUp, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Link as ScrollLink } from 'react-scroll';
 
 
 export default function Footer() {
@@ -9,10 +10,10 @@ export default function Footer() {
         <footer className="text-center text-white pt-2 pb-4 " style={{backgroundColor: "#000000"}}>
             {/* Back to top */}
             <div className="mb-3">
-                <a href="#top" className="text-uppercase small fw-bold text-decoration-none text-reset lh-1">
+                <ScrollLink to="top" className="text-uppercase small fw-bold text-decoration-none text-reset lh-1" style={{cursor: "pointer"}}>
                     <FontAwesomeIcon icon={faAnglesUp}/><br/>
                     Back to top
-                </a>
+                </ScrollLink>
             </div>
 
             {/* Social Icons */}
