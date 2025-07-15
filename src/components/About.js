@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Aboutme(props) {
+export default function About(props) {
     return (
-        <section className="text-center py-5" id="Aboutme">
+        <section className="text-center py-5" id="About">
             {/* Heading Box */}
             <div className="mb-3">
                 <h2 className="border border-5 border-dark d-inline-block px-4 py-2 fw-bold fs-5 letter-spacing">
