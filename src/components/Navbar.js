@@ -32,7 +32,7 @@ export default function Navbar(props) {
                 </div>
                 
                 <div className={`my-nav-links text-reset ${!isMenuOpen ? "" : "menuClose"}`}>
-                    <Link to="/portfolio" className={`my-nav-links-item scale-hover px-2 ${active === 'Home' ? 'myActive' : 'text-color'}`}
+                    <Link to="/Portfolio" className={`my-nav-links-item scale-hover px-2 ${active === 'Home' ? 'myActive' : 'text-color'}`}
                         onClick={() => { handleClick('Home'); closeMenu(); }}>{props.home}</Link>
 
                     <a href="#Skills" className={`my-nav-links-item scale-hover px-2 ${active === 'Skills' ? 'myActive' : 'text-color'}`}
