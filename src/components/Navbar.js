@@ -17,7 +17,7 @@ export default function Navbar(props) {
     };
 
     // active state change
-    const [active, setActive] = useState('About Me');
+    const [active, setActive] = useState('Home');
 
     const handleClick = (item) => {
         setActive(item);
