@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="page-bg">
       <Router>
-        <Navbar about="About Me" skills="Skills" projects="Projects" contact="Contact"/>
+        <Navbar title="Portfolio" about="About Me" skills="Skills" projects="Projects" contact="Contact"/>
         <Routes>
           <Route exact path="/" element={<Home />}>
           </Route>

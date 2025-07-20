@@ -11,9 +11,16 @@ export default function Info(props) {
             <div className="text-wrapper">
               <h5 className="greeting-text">{props.greeting}</h5>
               <h1 className="name-text">{props.name}</h1>
-              <p className="designation-text">
+              <div className="animation-text">
+                <ol>
+                  <li><span>Web Developer</span></li>
+                  <li><span>Full Stack Developer</span></li>
+                  <li><span>Coder</span></li>
+                </ol>
+              </div>
+              {/* <p className="designation-text">
                 {props.degination1} <span className="designation-bold">{props.degination2}</span>
-              </p>
+              </p> */}
             </div>
             <div className="icon-wrapper">
               <div className="icon-container">

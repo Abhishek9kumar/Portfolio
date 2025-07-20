@@ -1,8 +1,9 @@
-import React, { useState} from "react";
-import { faBars} from '@fortawesome/free-solid-svg-icons';
+import React, { useState } from "react";
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from "@fortawesome/free-solid-svg-icons/faTimes";
-import {Link as ScrollLink} from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
+import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
     // hamburger
@@ -24,13 +25,14 @@ export default function Navbar(props) {
     };
 
     return (
-        <nav className="my-navbar">
-            <div className="my-navbar-container d-flex justify-content-end">
-                <div className="menu-toggle mt-3 me-3" onClick={hrefggleMenu}>
+        <nav className="my-navbar d-flex">
+            <Link className="brand-title" to="/">{props.title}</Link>
+            <div className="my-navbar-container d-flex align-items-center justify-content-end">
+                <div className="menu-toggle me-3" onClick={hrefggleMenu}>
                     <FontAwesomeIcon className={`text-white ${!isMenuOpen ? "menuClose" : ""}`} icon={faBars} />
                     <FontAwesomeIcon className={`text-white ${isMenuOpen ? "menuClose" : ""}`} icon={faTimes} />
                 </div>
-                
+
                 <div className={`my-nav-links text-reset ${!isMenuOpen ? "" : "menuClose"}`}>
 
                     <ScrollLink to="About" className={`my-nav-links-item scale-hover px-2 ${active === 'About' ? 'myActive' : 'text-color'}`}
@@ -41,7 +43,7 @@ export default function Navbar(props) {
 
                     <ScrollLink to="Projects" className={`my-nav-links-item scale-hover px-2 ${active === 'Projects' ? 'myActive' : 'text-color'}`}
                         onClick={() => { handleClick('Projects'); closeMenu(); }}>{props.projects}</ScrollLink>
-                    
+
                     <ScrollLink to="Contact" className={`my-nav-links-item scale-hover px-2 ${active === 'Contact Me' ? 'myActive' : 'text-color'}`}
                         onClick={() => { handleClick('Contact Me'); closeMenu(); }}>{props.contact}</ScrollLink>
                 </div>
