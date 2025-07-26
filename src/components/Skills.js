@@ -53,7 +53,7 @@ export default function Skills() {
             <div className="container mb-5">
                 <div className="row row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4 justify-content-center">
                     {usingSkills.map((skill, index) => (
-                        <div className="col text-center mb-3 d-flex justify-content-center" >
+                        <div key={index} className="col text-center mb-3 d-flex justify-content-center" >
                             <div style={{ width: 125, height: 125 }}>
                                 <CircularProgressbarWithChildren value={animatedValue[index] || 0} strokeWidth={4} styles={buildStyles({ pathColor: "#000000", pathTransitionDuration: 0.3 })}>
                                     <img src={skill.logoLink} alt={skill.title} style={{ width: "75px", height: "75px", marginTop: "10px" }} />

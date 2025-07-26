@@ -140,13 +140,14 @@ Link {
 
 .name-text {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3em;
     margin: 0;
 }
 
 .animation-text {
     font: lighter 1.5rem "Poppins", sans-serif;
     height: 1.5rem;
+    width: auto;
     font-style: italic;
     color: #656c71;
 }
@@ -227,7 +228,7 @@ Link {
     letter-spacing: 4px;
 }
 
-.btn-press-effect:active{
+.btn-press-effect:active {
     transform: scale(0.95);
     box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -417,22 +418,23 @@ textarea {
 
     .text-wrapper {
         color: #ffffff;
+        width: 80%;
     }
 
     .designation-text {
         color: #e9e9e9;
     }
 
-    .animation-text ol li span {
-        background: #c9c9c9;
-        -webkit-background-clip: text;
+    .name-text {
+        font-size: 2.5em;
     }
-
     .icon-wrapper {
         width: calc(100% - 60%);
         align-items: flex-end;
         justify-items: flex-end;
         justify-content: flex-end;
+        position: relative;
+        right: 1rem;
     }
 
     .icon-container {
@@ -491,6 +493,10 @@ textarea {
 
     .carousel-img {
         height: 400px;
+    }
+
+    .name-text {
+        font-size: 2em;
     }
 
     .image-wrapper {
