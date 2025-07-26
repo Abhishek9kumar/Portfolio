@@ -1,4 +1,5 @@
 import React from 'react';
+import { Typewriter } from 'react-simple-typewriter';
 
 export default function Info(props) {
   return (
@@ -11,16 +12,9 @@ export default function Info(props) {
             <div className="text-wrapper">
               <h5 className="greeting-text">{props.greeting}</h5>
               <h1 className="name-text">{props.name}</h1>
-              <div className="animation-text">
-                <ol>
-                  <li><span>Web Developer</span></li>
-                  <li><span>Full Stack Developer</span></li>
-                  <li><span>Coder</span></li>
-                </ol>
+              <div className="animation-text ">
+                <Typewriter words={['Web Developer', 'Full Stack Developer', 'Code']} loop={8} typeSpeed={20} deleteSpeed={150} delaySpeed={2000} cursor/>
               </div>
-              {/* <p className="designation-text">
-                {props.degination1} <span className="designation-bold">{props.degination2}</span>
-              </p> */}
             </div>
             <div className="icon-wrapper">
               <div className="icon-container">

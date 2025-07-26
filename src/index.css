@@ -140,67 +140,15 @@ Link {
 
 .name-text {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0;
 }
 
 .animation-text {
-    font: lighter 1.25rem "Poppins", sans-serif;
-}
-
-.animation-text ol {
-    list-style: none;
-    --height: 2rem;
-    height: var(--height);
-    line-height: var(--height);
-    overflow: hidden;
-    padding-left: 0;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: start;
-    margin-bottom: 0;
-}
-
-.animation-text ol li span {
+    font: lighter 1.5rem "Poppins", sans-serif;
+    height: 1.5rem;
     font-style: italic;
-    font-weight: 600;
-    -webkit-text-fill-color: transparent;
-    background: #272727;
-    -webkit-background-clip: text;
-    white-space: nowrap;
-    border-right: 2px solid black;
-    animation: cursor 0.8s step-end infinite, typing 3s steps(18) infinite alternate;
-}
-
-.animation-text ol li {
-    display: flex;
-    padding: 2px 0 1px 0;
-    animation: slide calc(3*3*2s) steps(3) infinite;
-}
-
-@keyframes slide {
-    100% {
-        transform: translateY(-300%);
-    }
-}
-
-@keyframes cursor {
-    50% {
-        border-color: transparent;
-    }
-}
-
-@keyframes typing {
-
-    0%,
-    10% {
-        width: 0%;
-    }
-
-    70%,
-    100% {
-        width: 101%;
-    }
+    color: #656c71;
 }
 
 .designation-bold {

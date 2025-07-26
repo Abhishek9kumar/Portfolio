@@ -1,15 +1,13 @@
-import React from 'react'
 
-const projects = [
-    {
-        title:"TextUtils",
-        image:`${process.env.PUBLIC_URL}/Img/textUtils.png`,
-        description:"This web application is a text utility which can be used to manipulate the text.",
-        link:"https://github.com/Abhishek9kumar/textUtils/tree/master",
-    }
-]
+import React, { useEffect, useState } from 'react';
+import { getPost } from '../api/Projects'
 
-export default function Portfolio() {
+export default function Portfolio(props) {
+    const [projects, setProjects] = useState([]);
+    
+        useEffect(() => {
+            getPost().then((res) => setProjects(res.data));
+        }, [])
 
     return (
         <section className="text-center pb-5" id="Projects">
@@ -24,20 +22,29 @@ export default function Portfolio() {
                 <div className="row g-3">
                     {projects.map((project, index) => (
                         <div className="col-6 col-sm-6 col-md-4" key={index}>
-                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-decoration-none text-reset">
-                            <img src={project.image} alt="textUtils" className="img-fluid" style={{height: "auto", objectFit: "fit", borderRadius: "5px" }} />
-                            <h3 className="text-start pt-2">{project.title}</h3>
-                            <p className="text-start small">
-                                {project.description}
-                            </p>
-                        </a>
-                    </div>
+                            <a
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-decoration-none text-reset"
+                            >
+                                <img
+                                    src={project.imagePath}
+                                    alt={project.title}
+                                    className="img-fluid"
+                                    style={{ height: "auto", objectFit: "fit", borderRadius: "5px" }}
+                                />
+                                <h3 className="text-start pt-2">{project.title}</h3>
+                                <p className="text-start small">{project.description}</p>
+                            </a>
+                        </div>
                     ))}
                 </div>
             </div>
+
             <div className="mt-5">
                 <hr className="w-100 mx-auto" style={{ borderTop: "3px double #000", width: "100px" }} />
             </div>
         </section>
-    )
+    );
 }
