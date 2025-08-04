@@ -31,7 +31,7 @@ export default function Home(props) {
       <Skills />
       <Projects />
       <Contact />
-      <Footer />
+      <Footer/>
     </>
   );
 }

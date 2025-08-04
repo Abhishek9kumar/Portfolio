@@ -158,6 +158,9 @@ Link {
 
 .info-container {
     padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
 }
 
 .icon-wrapper {
@@ -166,8 +169,6 @@ Link {
 
 .icon-container {
     display: flex;
-    margin-top: 5rem;
-    padding-top: 3rem;
     gap: 1rem;
     align-items: flex-end;
 }
@@ -226,6 +227,27 @@ Link {
 
 .letter-spacing {
     letter-spacing: 4px;
+}
+/*------------Projects---------------*/
+
+.project-card {
+  position: relative;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* dark transparent overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 5px;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
 }
 
 .btn-press-effect:active {
@@ -438,7 +460,7 @@ textarea {
         justify-items: flex-end;
         justify-content: flex-end;
         position: relative;
-        right: 1rem;
+        right: 0.5rem;
     }
 
     .icon-container {

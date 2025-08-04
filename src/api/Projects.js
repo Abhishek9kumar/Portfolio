@@ -1,5 +1,5 @@
 export const getPost = async () => {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbwYN8e6Tl1YycXpwYi4PqiEtlMdDh2rd2tRruKzFpT0ZAs2wAhZ5cSUqp6elT_TgQy9/exec?route=getProjects", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbzf2ENSxJ-YS7NdgVSDjNJeJngNbaBiP7HImqU6qi49_3Nb54Cg4O4p5T46u5ghAJCF/exec?route=getProjects", {
         method: "GET",
     });
     return await response.json();

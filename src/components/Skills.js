@@ -56,7 +56,7 @@ export default function Skills() {
                         <div key={index} className="col text-center mb-3 d-flex justify-content-center" >
                             <div style={{ width: 125, height: 125 }}>
                                 <CircularProgressbarWithChildren value={animatedValue[index] || 0} strokeWidth={4} styles={buildStyles({ pathColor: "#000000", pathTransitionDuration: 0.3 })}>
-                                    <img src={skill.logoLink} alt={skill.title} style={{ width: "75px", height: "75px", marginTop: "10px" }} />
+                                    <img src={skill.logoLink} alt={skill.title} style={{ width: "50px", height: "50px", marginTop: "10px" }} />
                                     <p className="fw-bold">{`${animatedValue[index]}%`}</p>
                                 </CircularProgressbarWithChildren>
                                 <div className="text-uppercase small fw-bold">{skill.title}</div>

@@ -8,12 +8,12 @@ export default function Info(props) {
       < div className="hero-content" >
         {/*left content*/}
         < div className="hero-left">
-          <div className="info-container z-1">
+          <div className="info-container">
             <div className="text-wrapper">
               <h5 className="greeting-text">{props.greeting}</h5>
               <h1 className="name-text">{props.name}</h1>
               <div className="animation-text ">
-                <Typewriter words={['Web Developer', 'Full Stack Developer', 'Code']} loop={8} typeSpeed={20} deleteSpeed={150} delaySpeed={2000} cursor/>
+                <Typewriter words={['Web Developer', 'Full Stack Developer', 'Coder', 'UI/UX Designer']} typeSpeed={20} deleteSpeed={150} delaySpeed={2000} cursor/>
               </div>
             </div>
             <div className="icon-wrapper">
