@@ -46,7 +46,7 @@ export default function Footer() {
 
             {/* Copyright */}
             <div className="text-white-50 small">
-                <b>©2020 Abhishek Kumar</b> All Rights Reserved.
+                <b>©2025 Abhishek Kumar</b> All Rights Reserved.
             </div>
         </footer>
     )

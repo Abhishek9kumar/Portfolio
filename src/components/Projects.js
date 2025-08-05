@@ -36,7 +36,7 @@ export default function Portfolio() {
             <div className="container">
                 {loading ? (
                     <div className="row g-4">
-                        {[...Array(3)].map((_, index) => (
+                        {[...Array(projects.length || 3)].map((_, index) => (
                             <div className="col-6 col-sm-6 col-md-4" key={index}>
                                 <RectangleLoader/>
                             </div>
@@ -54,26 +54,16 @@ export default function Portfolio() {
                                         style={{ height: "auto", objectFit: "fit", borderRadius: "5px" }}
                                     />
                                     <div className="project-overlay d-flex flex-column justify-content-center align-items-center">
-                                        <a
-                                            href={project.liveLink}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="btn btn-sm btn-light m-1"
-                                        >
+                                        <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-light m-1">
                                             View Demo
                                         </a>
-                                        <a
-                                            href={project.sourceCode}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="btn btn-sm btn-light m-1"
-                                        >
+                                        <a href={project.sourceCode} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-light m-1">
                                             Source Code
                                         </a>
                                     </div>
                                 </div>
                                 <h3 className="text-start pt-2">{project.title}</h3>
-                                <p className="text-start small">{project.description}</p>
+                                <p className="small" style={{ textAlign: "justify" }}>{project.description}</p>
                             </div>
                         ))}
                     </div>

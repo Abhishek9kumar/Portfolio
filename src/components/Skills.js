@@ -28,6 +28,8 @@ export default function Skills() {
     const [animatedValue, setAnimatedValue] = useState([]);
     const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.3 });
 
+    console.log(usingSkills.length);
+
     useEffect(() => {
         if (inView && usingSkills.length > 0) {
             const initial = usingSkills.map(() => 0);
@@ -66,8 +68,8 @@ export default function Skills() {
             <div className="container mb-5">
                 {loading ? (
                     <div className="row row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4 justify-content-center">
-                        {[...Array(11)].map((_, i) => (
-                            <div className="col" key={i}>
+                        {[...Array(usingSkills.length || 11)].map((_, index) => (
+                            <div className="col" key={index}>
                                 <CircleLoader />
                             </div>
                         ))}
@@ -96,8 +98,8 @@ export default function Skills() {
             <div className="container">
                 {loading ? (
                     <div className="row row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4 justify-content-center">
-                        {[...Array(3)].map((_, i) => (
-                            <div className="col" key={i}>
+                        {[...Array(learningSkills.length || 3)].map((_, index) => (
+                            <div className="col" key={index}>
                                 <CircleLoader />
                             </div>
                         ))}

@@ -13,7 +13,7 @@ export default function Info(props) {
               <h5 className="greeting-text">{props.greeting}</h5>
               <h1 className="name-text">{props.name}</h1>
               <div className="animation-text ">
-                <Typewriter words={['Web Developer', 'Full Stack Developer', 'Coder', 'UI/UX Designer']} typeSpeed={20} deleteSpeed={150} delaySpeed={2000} cursor/>
+                <Typewriter words={['Web Developer', 'Full Stack Developer', 'Coder', 'UI/UX Designer']} loop={true} typeSpeed={20} deleteSpeed={150} delaySpeed={2000} cursor/>
               </div>
             </div>
             <div className="icon-wrapper">
