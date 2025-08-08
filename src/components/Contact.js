@@ -14,7 +14,9 @@ export default function Contact() {
   }
 
   return (
-    <section className="text-center pb-5 px-2" id="Contact">
+    <>
+    <div id="Contact" style={{ position: "relative", top: "-5rem", height: "0" }}></div>
+    <section className="text-center pb-5 px-2">
       <div className="mb-4">
         <h2 className="border border-5 border-dark d-inline-block px-5 py-2 fw-bold fs-5 letter-spacing">
           CONTACT
@@ -77,8 +79,7 @@ export default function Contact() {
           </div>
         </form>
       </div>
-
-
     </section>
+    </>
   )
 }
