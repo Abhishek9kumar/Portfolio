@@ -1,4 +1,6 @@
 import './App.css';
+import React, {useEffect} from 'react';
+import AOS from "aos";
 import {
   HashRouter as Router,
   Routes,
@@ -10,6 +12,9 @@ import Home from './components/Home';
 
 
 function App() {
+    useEffect (() =>{
+    AOS.init({duration:2000});
+  },[]);
   return (
     <div className="page-bg">
       <Router>

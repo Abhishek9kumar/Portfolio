@@ -18,13 +18,13 @@ export default function Contact() {
     <div id="Contact" style={{ position: "relative", top: "-5rem", height: "0" }}></div>
     <section className="text-center pb-5 px-2">
       <div className="mb-4">
-        <h2 className="border border-5 border-dark d-inline-block px-5 py-2 fw-bold fs-5 letter-spacing">
+        <h2 className="border border-5 border-dark d-inline-block px-5 py-2 fw-bold fs-5 letter-spacing"  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
           CONTACT
         </h2>
       </div>
 
       {/* Form */}
-      <div className="container d-flex justify-content-center">
+      <div className="container d-flex justify-content-center" data-aos="flip-up">
         <form onSubmit={handleSubmit} style={{ maxWidth: "500px", width: "100%" }}>
           <div className="mb-4 text-start">
             <input

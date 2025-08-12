@@ -5,7 +5,8 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import reportWebVitals from './reportWebVitals';
-import 'react-circular-progressbar/dist/styles.css'
+import 'react-circular-progressbar/dist/styles.css';
+import "aos/dist/aos.css";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -2,6 +2,7 @@ import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 
 export default function Info(props) {
+
   return (
     <div className="hero-wrapper">
       {/* Main Section */}
@@ -9,7 +10,7 @@ export default function Info(props) {
         {/*left content*/}
         < div className="hero-left">
           <div className="info-container">
-            <div className="text-wrapper">
+            <div className="text-wrapper" data-aos="fade-right">
               <h5 className="greeting-text">{props.greeting}</h5>
               <h1 className="name-text">{props.name}</h1>
               <div className="animation-text ">
@@ -17,7 +18,7 @@ export default function Info(props) {
               </div>
             </div>
             <div className="icon-wrapper">
-              <div className="icon-container">
+              <div className="icon-container" data-aos="zoom-in">
                 {props.children}
               </div>
             </div>
@@ -25,8 +26,8 @@ export default function Info(props) {
         </div>
 
         {/* Right Content */}
-        <div className="hero-right">
-          <div className="image-wrapper">
+        <div className="hero-right" >
+          <div className="image-wrapper" data-aos="slide-up">
             <img src={props.imgLink} alt="profile" className="profile-image" />
           </div>
         </div>

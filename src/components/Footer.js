@@ -9,7 +9,7 @@ export default function Footer() {
     return (
         <footer className="text-center text-white pt-2 pb-4 " style={{backgroundColor: "#000000"}}>
             {/* Back to top */}
-            <div className="mb-3">
+            <div className="mb-3" data-aos="zoom-in">
                 <ScrollLink to="top" className="text-uppercase small fw-bold text-decoration-none text-reset lh-1" style={{cursor: "pointer"}}>
                     <FontAwesomeIcon icon={faAnglesUp}/><br/>
                     Back to top

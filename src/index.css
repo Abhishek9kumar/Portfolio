@@ -412,12 +412,12 @@ textarea {
     .hero-wrapper {
         overflow: hidden;
         display: flex;
+        height: 70vh;
     }
 
     .hero-content {
         position: relative;
         flex-direction: column-reverse;
-
     }
 
     /*----left side----- */
