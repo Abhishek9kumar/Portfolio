@@ -30,7 +30,7 @@ export default function Portfolio() {
             <div id="Projects" style={{ position: "relative", top: "-5rem", height: "0" }}></div>
             <section className="text-center pb-5">
                 <div className="mb-4">
-                    <h2 className="border border-5 border-dark d-inline-block px-5 py-2 fw-bold fs-5 letter-spacing"  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <h2 className="border border-5 border-dark d-inline-block px-5 py-2 fw-bold fs-5 letter-spacing" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         PROJECTS
                     </h2>
                 </div>
@@ -48,25 +48,27 @@ export default function Portfolio() {
                     ) : (
                         <div className="row g-4">
                             {projects.map((project, index) => (
-                                <div className="col-6 col-sm-6 col-md-4" key={index} data-aos="zoom-in" data-aos-delay={index*100}>
-                                    <div className="project-card position-relative overflow-hidden">
-                                        <img
-                                            src={project.imagePath}
-                                            alt={project.title}
-                                            className="img-fluid"
-                                            style={{ height: "auto", objectFit: "fit", borderRadius: "5px" }}
-                                        />
-                                        <div className="project-overlay d-flex flex-column justify-content-center align-items-center">
-                                            <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-light m-1">
-                                                View Demo
-                                            </a>
-                                            <a href={project.sourceCode} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-light m-1">
-                                                Source Code
-                                            </a>
+                                <div className="col-6 col-sm-6 col-md-4" key={index} >
+                                    <div data-aos="zoom-in" data-aos-delay={index * 100}>
+                                        <div className="project-card position-relative overflow-hidden">
+                                            <img
+                                                src={project.imagePath}
+                                                alt={project.title}
+                                                className="img-fluid"
+                                                style={{ height: "auto", objectFit: "fit", borderRadius: "5px" }}
+                                            />
+                                            <div className="project-overlay d-flex flex-column justify-content-center align-items-center">
+                                                <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-light m-1">
+                                                    View Demo
+                                                </a>
+                                                <a href={project.sourceCode} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-light m-1">
+                                                    Source Code
+                                                </a>
+                                            </div>
                                         </div>
+                                        <h3 className="text-start pt-2">{project.title}</h3>
+                                        <p className="small" style={{ textAlign: "justify" }}>{project.description}</p>
                                     </div>
-                                    <h3 className="text-start pt-2">{project.title}</h3>
-                                    <p className="small" style={{ textAlign: "justify" }}>{project.description}</p>
                                 </div>
                             ))}
                         </div>
