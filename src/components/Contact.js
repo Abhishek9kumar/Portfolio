@@ -24,9 +24,9 @@ export default function Contact() {
       </div>
 
       {/* Form */}
-      <div className="container d-flex justify-content-center" data-aos="flip-up">
+      <div className="container d-flex justify-content-center">
         <form onSubmit={handleSubmit} style={{ maxWidth: "500px", width: "100%" }}>
-          <div className="mb-4 text-start">
+          <div className="mb-4 text-start" data-aos="flip-up" data-aos-delay="0">
             <input
               type="text"
               style={{ outline: "none", boxShadow: "none" }}
@@ -37,7 +37,7 @@ export default function Contact() {
             />
           </div>
 
-          <div className="mb-4 text-start">
+          <div className="mb-4 text-start" data-aos="flip-up" data-aos-delay="100">
             <input
               type="email"
               style={{ outline: "none", boxShadow: "none" }}
@@ -48,7 +48,7 @@ export default function Contact() {
             />
           </div>
 
-          <div className="mb-4 text-start">
+          <div className="mb-4 text-start" data-aos="flip-up" data-aos-delay="200">
             <input
               type="tel"
               style={{ outline: "none", boxShadow: "none" }}
@@ -58,7 +58,7 @@ export default function Contact() {
             />
           </div>
 
-          <div className="mb-4 text-start">
+          <div className="mb-4 text-start" data-aos="flip-up" data-aos-delay="300">
             <textarea
               rows="4"
               style={{ outline: "none", boxShadow: "none" }}

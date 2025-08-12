@@ -40,7 +40,7 @@ export default function About(props) {
                         </div>
 
                         {/* Maintenance */}
-                        <div className="col-md-4 mx-5" data-aos="fade-left">
+                        <div className="col-md-4 mx-5" data-aos="fade-right">
                             <h5 className="fw-bold text-uppercase">{props.maintenance}</h5>
                             <p className="text-muted small">
                                 {props.maintenanceDesc}

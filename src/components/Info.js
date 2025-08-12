@@ -27,7 +27,7 @@ export default function Info(props) {
 
         {/* Right Content */}
         <div className="hero-right" >
-          <div className="image-wrapper" data-aos="slide-up">
+          <div className="image-wrapper">
             <img src={props.imgLink} alt="profile" className="profile-image" />
           </div>
         </div>
