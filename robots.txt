@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Aallow: /
+Allow: /
 Sitemap: https://abhishek9kumar.github.io/portfolio/sitemap.xml
