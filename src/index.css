@@ -225,6 +225,15 @@ Link {
     padding-left: 10rem;
 }
 
+.download_btn {
+    background-color: rgba(191, 191, 191, 1);
+    color: #1A1110;
+    padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
 .letter-spacing {
     letter-spacing: 4px;
 }
