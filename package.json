@@ -17,6 +17,7 @@
     "ajv-keywords": "^5.1.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.7",
+    "copyfiles": "^2.4.1",
     "react": "^19.1.0",
     "react-circular-progressbar": "^2.2.0",
     "react-content-loader": "^7.1.1",
@@ -33,7 +34,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && npx copyfiles .gitattributes build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
