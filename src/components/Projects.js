@@ -61,7 +61,7 @@ export default function Portfolio() {
                                                 <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className={`btn btn-sm btn-light m-1 ${project.liveLink ? "btn-light" : "disabled"}`}>
                                                     View Demo
                                                 </a>
-                                                <a href={project.sourceCode} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-light m-1">
+                                                <a href={project.sourceCode} target="_blank" rel="noopener noreferrer" className={`btn btn-sm btn-light m-1 ${project.sourceCode ? "btn-light" : "disabled"}`}>
                                                     Source Code
                                                 </a>
                                             </div>
