@@ -58,7 +58,7 @@ export default function Portfolio() {
                                                 style={{ height: "auto", objectFit: "fit", borderRadius: "5px" }}
                                             />
                                             <div className="project-overlay d-flex flex-column justify-content-center align-items-center">
-                                                <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-light m-1">
+                                                <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className={`btn btn-sm btn-light m-1 ${project.liveLink ? "btn-light" : "disabled"}`}>
                                                     View Demo
                                                 </a>
                                                 <a href={project.sourceCode} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-light m-1">
